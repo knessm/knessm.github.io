@@ -1,12 +1,14 @@
-function posicao_aleatoria()
-{
-        let botao = document.getElementById("meuBotao");
-        let larguraJanela = window.innerWidth;
-        let alturaJanela = window.innerHeight;
+function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
 
-        let novaPosicaoX = Math.random() * (larguraJanela - botao.offsetWidth);
-        let novaPosicaoY = Math.random() * (alturaJanela - botao.offsetHeight);
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+    function sim(){
 
-        botao.style.left = novaPosicaoX + "px";
-        botao.style.top = novaPosicaoY + "px";
-}
+    }
