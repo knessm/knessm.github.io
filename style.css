@@ -11,7 +11,7 @@ body{
 a{
     text-decoration: none;   /* Remove o sublinhado */
     color: inherit;          /* Herda a cor do texto ao redor */
-    cursor: pointer;         /* Mostra que é clicável */
+    cursor: pointer;         
 }
 
 .container {
