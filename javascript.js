@@ -10,5 +10,5 @@ function desvia(btn) {
         return (Math.random() * (max - min) + min) + "%";
     }
     function sim(){
-
+document.getElementById("BTNsim");
     }
